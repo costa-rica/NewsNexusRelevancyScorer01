@@ -24,3 +24,12 @@ NAME_DB=newsnexus07.db
 PATH_DATABASE=/Users/nick/Documents/_databases/NewsNexus07/
 PATH_TO_KEYWORDS_EXCEL_FILE=/Users/nick/Documents/_project_resources/NewsNexus07/utilities/relevancy_scorer/NewsNexusRelevancyScorerKeywords.xlsx
 ```
+
+## model used
+
+```bash
+  const embedder = await pipeline(
+    "feature-extraction",
+    "Xenova/paraphrase-MiniLM-L6-v2"
+  );
+```
