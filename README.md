@@ -5,6 +5,8 @@
 This is a Node.js script that scores articles based on their relevance to a set of keywords using the Hugging Face Transformers library. It uses keywords from an Excel file. The excel file is stored in the env variable PATH_TO_KEYWORDS_EXCEL_FILE.
 
 - Uses the NewsNexus07 SQLite database.
+- stores scores in the NewsNexus07 SQLite database for each keyword (in the spreadsheet) and article in the ArticleEntityWhoCategorizedArticleContract table.
+- - this creates a many rows # of keywords x # of articles table.
 - Fully offline — no calls to the Hugging Face API.
 - Designed to scale to thousands of articles and hundreds of keywords.
 - Part of the NewsNexus system of microservices.
